@@ -10,12 +10,12 @@ const sliceposts=[];
 const imagelist=[];
 
 
-app.get("/log-in",function(req,res){
-    res.render("log-in.ejs")
-})
+ app.get("/log-in",function(req,res){
+     res.render("log-in.ejs")
+ })
 
 
-app.get("/",function(req,res){
+app.get("/home",function(req,res){
     res.render("home.ejs",{TITLE:listoftitle,POST:sliceposts})
 })
 
